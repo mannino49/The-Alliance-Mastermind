@@ -17,6 +17,7 @@ export const mockChatAPI = async (messages, currentClientId) => {
   const mission = missionMatch ? missionMatch[1] : 'Unknown';
 
   // Parse all client data for comparisons
+  // eslint-disable-next-line no-unused-vars
   const allClientsData = systemContext.match(/- ([^:]+) \(([^)]+)\):[\s\S]*?Flow Readiness: (\d+)[\s\S]*?Leadership Leverage: (\d+)[\s\S]*?Top Strengths: ([^\n]+)[\s\S]*?Key Risks: ([^\n]+)/g);
   
   let response = '';

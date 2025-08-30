@@ -22,7 +22,6 @@ import BruceBowserDashboard from './components/BruceBowserDashboard';
 
 function AppContent() {
   const [currentPage, setCurrentPage] = useState('landing');
-  const [selectedClient, setSelectedClient] = useState(null);
   const { currentUser, isAuthenticated, logout } = useAuth();
 
   // Simple ClientDashboardHeader component
@@ -38,26 +37,6 @@ function AppContent() {
 
   // Simple navigation component
   const Navigation = () => {
-    // Helper function to get client name display
-    const getClientName = (clientId) => {
-      switch(clientId) {
-        case 'rick': return 'Rick';
-        case 'brian': return 'Brian';
-        case 'amity': return 'Amity';
-        case 'stephanie': return 'Stephanie';
-        case 'ricksessinghaus': return 'Rick S.';
-        case 'blair': return 'Blair';
-        case 'rob': return 'Rob';
-        case 'michael': return 'Michael';
-        case 'jason': return 'Jason';
-        case 'james': return 'James';
-        case 'geof': return 'Geoffrey';
-        case 'anatoliy': return 'Anatoliy';
-        case 'sandra': return 'Sandra';
-        case 'bruce': return 'Bruce';
-        default: return clientId;
-      }
-    };
     
     return (
       <nav className="bg-gradient-to-r from-dark-900 to-dark-800 text-white p-4 border-b border-dark-700 shadow-lg">
@@ -75,7 +54,6 @@ function AppContent() {
                 <button 
                   onClick={() => {
                     setCurrentPage('homepage');
-                    setSelectedClient(null);
                   }}
                   className={`px-3 py-2 rounded transition-colors ${currentPage === 'homepage' ? 'bg-primary-700 text-white' : 'hover:bg-dark-700 text-gray-200'}`}
                 >
@@ -121,8 +99,7 @@ function AppContent() {
   const renderPage = () => {
     switch(currentPage) {
       case 'login':
-        return <LoginPage onLoginSuccess={(clientId) => {
-          setSelectedClient(clientId);
+        return <LoginPage onLoginSuccess={() => {
           setCurrentPage('homepage');
         }} />;
       case 'homepage':

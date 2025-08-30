@@ -1,0 +1,39 @@
+{
+  "name": "the-alliance",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.24",
+    "autoprefixer": "^10.4.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "setup-chatbot": "chmod +x setup_chatbot.sh && ./setup_chatbot.sh",
+    "integrate-chatbot": "chmod +x integrate_chatbot.sh && ./integrate_chatbot.sh",
+    "chatbot-status": "echo 'Checking chatbot integration status...' && find src/components -name '*Dashboard.js' -exec grep -l 'ClientChatbot' {} \\; | wc -l | xargs -I {} echo 'Dashboards with chatbot: {}/15'"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

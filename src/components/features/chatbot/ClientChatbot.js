@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { formatInsightsForChatbot } from '../../../shared/utils/insightsLoaderSimple';
 import { jamesCroweConversationSummary } from '../../../data/clients/james_crowe_transcripts';
 import { brianCamastralTranscript } from '../../../data/clients/brian_camastral_data';
@@ -23,13 +23,7 @@ What's blocking you creatively right now? Or what would you like to breakthrough
   const [isOpen, setIsOpen] = useState(true); // Open by default
   const messagesEndRef = useRef(null);
 
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
+  // Removed automatic scrolling functionality
 
   // Create a comprehensive context about all clients for the AI
   const createSystemContext = () => {
@@ -449,66 +443,139 @@ Respond as if this session could help them unlock the next 10x leap in their lif
 
       {/* Chat Interface */}
       {isOpen && (
-        <div className="w-full bg-white rounded-lg shadow-lg border border-gray-200 flex flex-col">
-          {/* Chat Header */}
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 rounded-t-lg">
-            <h3 className="font-semibold">Flow Mastermind AI</h3>
-            <p className="text-sm text-blue-100">Your personalized performance assistant</p>
-          </div>
+        <div className="w-full bg-white rounded-lg shadow-lg border border-gray-200 grid grid-cols-1 lg:grid-cols-3 gap-0">
+          {/* Main Chat Section */}
+          <div className="lg:col-span-2 flex flex-col">
+            {/* Chat Header */}
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 rounded-tl-lg lg:rounded-tr-none rounded-tr-lg">
+              <h3 className="font-semibold">Flow Mastermind AI</h3>
+              <p className="text-sm text-blue-100">Your personalized performance assistant</p>
+            </div>
 
-          {/* Messages Container */}
-          <div className="h-80 overflow-y-auto p-4 space-y-3">
-            {messages.map((message, index) => (
-              <div
-                key={index}
-                className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
-              >
+            {/* Messages Container */}
+            <div className="h-80 overflow-y-auto p-4 space-y-3">
+              {messages.map((message, index) => (
                 <div
-                  className={`max-w-xs lg:max-w-md px-4 py-2 rounded-lg ${
-                    message.role === 'user'
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-gray-100 text-gray-800'
-                  }`}
+                  key={index}
+                  className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
                 >
-                  <p className="text-sm whitespace-pre-wrap">{message.content}</p>
-                </div>
-              </div>
-            ))}
-            {isLoading && (
-              <div className="flex justify-start">
-                <div className="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg">
-                  <div className="flex space-x-1">
-                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
-                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                  <div
+                    className={`max-w-xs lg:max-w-md px-4 py-2 rounded-lg ${
+                      message.role === 'user'
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-gray-100 text-gray-800'
+                    }`}
+                  >
+                    <p className="text-sm whitespace-pre-wrap">{message.content}</p>
                   </div>
                 </div>
+              ))}
+              {isLoading && (
+                <div className="flex justify-start">
+                  <div className="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg">
+                    <div className="flex space-x-1">
+                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              <div ref={messagesEndRef} />
+            </div>
+
+            {/* Input Area */}
+            <div className="p-4 border-t border-gray-200">
+              <div className="flex space-x-2">
+                <textarea
+                  value={inputMessage}
+                  onChange={(e) => setInputMessage(e.target.value)}
+                  onKeyPress={handleKeyPress}
+                  placeholder="Ask me about your creative performance, get insights, or breakthrough strategies..."
+                  className="flex-1 border border-gray-300 rounded-lg px-3 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-black placeholder-gray-500"
+                  rows="2"
+                  disabled={isLoading}
+                />
+                <button
+                  onClick={sendMessage}
+                  disabled={!inputMessage.trim() || isLoading}
+                  className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white px-4 py-2 rounded-lg transition-colors duration-200"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                  </svg>
+                </button>
               </div>
-            )}
-            <div ref={messagesEndRef} />
+            </div>
           </div>
 
-          {/* Input Area */}
-          <div className="p-4 border-t border-gray-200">
-            <div className="flex space-x-2">
-              <textarea
-                value={inputMessage}
-                onChange={(e) => setInputMessage(e.target.value)}
-                onKeyPress={handleKeyPress}
-                placeholder="Ask me about your creative performance, get insights, or breakthrough strategies..."
-                className="flex-1 border border-gray-300 rounded-lg px-3 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-black placeholder-gray-500"
-                rows="2"
-                disabled={isLoading}
-              />
-              <button
-                onClick={sendMessage}
-                disabled={!inputMessage.trim() || isLoading}
-                className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white px-4 py-2 rounded-lg transition-colors duration-200"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                </svg>
-              </button>
+          {/* Suggested Prompts Sidebar */}
+          <div className="bg-gray-50 border-l border-gray-200 flex flex-col rounded-tr-lg rounded-br-lg">
+            {/* Sidebar Header */}
+            <div className="bg-gray-100 p-3 border-b border-gray-200 rounded-tr-lg">
+              <h4 className="font-semibold text-gray-700 text-sm">Suggested Prompts</h4>
+            </div>
+
+            {/* Prompts List */}
+            <div className="flex-1 overflow-y-auto p-3 space-y-1">
+              {[
+                {
+                  category: "Progress & Alignment",
+                  prompts: [
+                    "What progress have I made since my last session?",
+                    "Summarize my key wins and growth areas this week.",
+                    "Based on my transcripts, what themes keep repeating?",
+                    "How aligned are my recent actions with my mission?",
+                    "What opportunities should I say 'no' to in order to stay aligned?",
+                    "Give me a Mission Alignment Score update."
+                  ]
+                },
+                {
+                  category: "Flow & Recovery",
+                  prompts: [
+                    "What are my strongest flow triggers right now?",
+                    "Where am I losing flow opportunities?",
+                    "Give me recovery recommendations based on my patterns."
+                  ]
+                },
+                {
+                  category: "Toolkit Integration",
+                  prompts: [
+                    "Explain my results through the lens of the toolkit.",
+                    "Which toolkit area should I prioritize next?",
+                    "Give me a toolkit-based strategy for my biggest challenge."
+                  ]
+                },
+                {
+                  category: "Next Steps",
+                  prompts: [
+                    "What's the single most important action I should take this week?",
+                    "Generate a 7-day action plan aligned with my goals.",
+                    "Show me one experiment I can try to validate my direction."
+                  ]
+                },
+                {
+                  category: "Fresh Perspectives",
+                  prompts: [
+                    "What surprising patterns can you see in my data?",
+                    "Give me three new perspectives on my current challenge.",
+                    "Summarize my journey as if it were a story arc."
+                  ]
+                }
+              ].map((section, sectionIndex) => (
+                <div key={sectionIndex} className="mb-3">
+                  <div className="text-xs font-medium text-gray-600 mb-2">{section.category}</div>
+                  {section.prompts.map((prompt, promptIndex) => (
+                    <button
+                      key={promptIndex}
+                      onClick={() => setInputMessage(prompt)}
+                      className="w-full text-left text-xs p-2 rounded-md bg-white hover:bg-blue-50 border border-gray-200 hover:border-blue-300 transition-colors duration-200 mb-1 text-black"
+                    >
+                      {prompt}
+                    </button>
+                  ))}
+                </div>
+              ))}
             </div>
           </div>
         </div>

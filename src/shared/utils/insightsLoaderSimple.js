@@ -673,6 +673,210 @@ export const getAllClientInsights = () => {
         keyRisks: ["Dilution across multiple innovation tracks", "Recovery inconsistency and over-excitement", "Risk of burnout from high stimulation", "Need to systematize recovery practices", "Sequencing multiple projects carefully"],
         nextAction: "Systematize recovery (evening sauna + wind-down), sequence innovations, tighten feedback loops"
       }
+    },
+    'Rick Watkin': {
+      insights: [
+        {
+          id: 1,
+          title: "Mission Clarity + Vision Integration",
+          dataSignals: [
+            "Clear mission focus with strong visionary perspective",
+            "High drive and motivation toward business and personal goals",
+            "Team-oriented approach with natural leadership tendencies"
+          ],
+          analyticsInsight: {
+            strengths: ["Clear mission provides strong direction and focus", "High drive creates consistent momentum", "Team orientation enables collaborative leadership"],
+            risks: ["Sleep deficit undermining performance and decision-making", "Low recovery/play creating burnout risk", "High drive without adequate rest unsustainable long-term"]
+          },
+          suggestedMetric: {
+            name: "Sustainable Drive Score",
+            description: "High performance maintained through proper recovery balance",
+            estimate: "~50% — strong drive but needs recovery optimization for sustainability"
+          }
+        },
+        {
+          id: 2,
+          title: "Flow Readiness + Recovery Optimization",
+          dataSignals: [
+            "Flow readiness limited by sleep deficit and recovery gaps",
+            "High drive creating push without adequate pull-back",
+            "Mission clarity strong but energy management needs attention"
+          ],
+          analyticsInsight: {
+            strengths: ["Clear mission provides flow direction", "High drive enables deep engagement when rested", "Team focus creates accountability and energy"],
+            risks: ["Sleep deficit directly impacting flow access", "Low recovery preventing sustainable high performance", "Drive without recovery creating diminishing returns"]
+          },
+          suggestedMetric: {
+            name: "Recovery-Performance Balance",
+            description: "Flow readiness supported by consistent recovery practices",
+            estimate: "~45% — immediate need for sleep and recovery optimization"
+          }
+        },
+        {
+          id: 3,
+          title: "Leadership Leverage + Team Impact",
+          dataSignals: [
+            "Team-oriented leadership style with collaborative approach",
+            "Visionary perspective helps others see bigger picture",
+            "High drive models commitment and dedication for team"
+          ],
+          analyticsInsight: {
+            strengths: ["Team orientation creates inclusive leadership style", "Clear mission helps align others toward common goals", "High drive demonstrates commitment and inspires others"],
+            risks: ["Sleep deficit may affect leadership presence and decision quality", "Lack of recovery modeling unsustainable patterns for team", "High drive without boundaries may create team pressure"]
+          },
+          suggestedMetric: {
+            name: "Sustainable Leadership Impact",
+            description: "Consistent positive influence on team through balanced high performance",
+            estimate: "~60% — good leadership foundation, needs recovery modeling for team"
+          }
+        }
+      ],
+      dashboardMetrics: {
+        missionAlignment: 70,
+        flowReadiness: 45,
+        flowLeadership: 60
+      },
+      summary: {
+        topStrengths: ["Clear mission vision that provides direction and focus", "High drive and motivation that creates momentum", "Team-oriented leadership style that includes others", "Visionary perspective that helps others see possibilities", "Collaborative approach that builds alignment"],
+        keyRisks: ["Sleep deficit undermining cognitive performance and decision-making", "Low recovery/play creating burnout and sustainability issues", "High drive without boundaries leading to team pressure", "Mission focus without energy management reducing effectiveness", "Leadership impact limited by personal energy depletion"],
+        nextAction: "Implement consistent sleep schedule (7-8 hours), add daily recovery ritual, design sustainable high-performance rhythm"
+      }
+    },
+    'Rob Finlay': {
+      insights: [
+        {
+          id: 1,
+          title: "Mission Alignment + Project Portfolio Focus",
+          dataSignals: [
+            "Rob manages multiple entrepreneurial projects with creative vision",
+            "Strong community building abilities with entrepreneurial energy",
+            "Balancing various business initiatives and creative pursuits"
+          ],
+          analyticsInsight: {
+            strengths: ["Entrepreneurial energy drives multiple opportunities", "Natural community builder creates valuable networks", "Creative vision enables innovative approaches"],
+            risks: ["Focus diffusion across too many projects", "Travel disruptions affect consistency", "Planning fatigue from juggling multiple initiatives"]
+          },
+          suggestedMetric: {
+            name: "Project Focus Score",
+            description: "% of energy going to top 3 highest-impact projects vs. scattered across many",
+            estimate: "~60% — entrepreneurial drive creating opportunities, needs focus prioritization"
+          }
+        },
+        {
+          id: 2,
+          title: "Flow Readiness & Consistency Management",
+          dataSignals: [
+            "Flow readiness challenged by travel disruptions and multiple project demands",
+            "Entrepreneurial energy creates momentum but can lead to burnout patterns",
+            "Planning fatigue affects ability to maintain consistent systems"
+          ],
+          analyticsInsight: {
+            strengths: ["High energy and drive when focused", "Creative vision enables flow state access", "Community connections provide energy and feedback"],
+            risks: ["Travel disrupts recovery and flow routines", "Focus diffusion prevents deep flow states", "Planning fatigue creates inconsistent execution"]
+          },
+          suggestedMetric: {
+            name: "Flow Consistency Index",
+            description: "Consistent access to flow states despite travel and multiple projects",
+            estimate: "~55% — good energy but needs better systems for consistency"
+          }
+        },
+        {
+          id: 3,
+          title: "Leadership Leverage + Community Impact",
+          dataSignals: [
+            "Natural community builder with ability to inspire and connect others",
+            "Entrepreneurial energy creates opportunities for others",
+            "Creative vision helps others see new possibilities"
+          ],
+          analyticsInsight: {
+            strengths: ["Community building creates natural leadership platform", "Entrepreneurial experience provides valuable mentorship", "Creative vision inspires innovative thinking in others"],
+            risks: ["Focus diffusion reduces depth of impact", "Travel affects consistent community engagement", "Multiple projects may dilute leadership presence"]
+          },
+          suggestedMetric: {
+            name: "Community Leadership Score",
+            description: "Consistent positive impact on community members through focused leadership",
+            estimate: "~65% — strong natural ability, needs focus to maximize impact"
+          }
+        }
+      ],
+      dashboardMetrics: {
+        missionAlignment: 60,
+        flowReadiness: 55,
+        flowLeadership: 65
+      },
+      summary: {
+        topStrengths: ["Entrepreneurial energy that creates opportunities", "Natural community building and networking abilities", "Creative vision that inspires innovative approaches", "High drive and motivation", "Ability to see potential in multiple areas"],
+        keyRisks: ["Focus diffusion across too many projects reducing depth", "Travel disruptions affecting consistency and routines", "Planning fatigue from juggling multiple initiatives", "Risk of burnout from high-energy, scattered approach", "Difficulty prioritizing among many opportunities"],
+        nextAction: "Focus on top 3 highest-impact projects, create travel-friendly routines, implement weekly planning rhythm to reduce fatigue"
+      }
+    },
+    'Sandra Ozols': {
+      insights: [
+        {
+          id: 1,
+          title: "Mission Alignment + Next Chapter Design",
+          dataSignals: [
+            "Sandra's mission: transition from a structured corporate identity to a more creative, fluid, self-directed chapter",
+            "Exploring consulting/advisory paths, possibly launching her own firm, or joining a fund if values align",
+            "Seeks to blend accumulated expertise (human capital, org design, talent management) with a renewed sense of purpose and joy"
+          ],
+          analyticsInsight: {
+            strengths: ["Strong thematic clarity: helping leaders and organizations cross to higher performance levels through talent and culture design"],
+            risks: ["Overwhelm from too many potential pathways, difficulty mapping actions to this emerging mission"]
+          },
+          suggestedMetric: {
+            name: "Mission Alignment Score",
+            description: "% of effort advancing design + testing of new career models (advisory, consulting, fund roles)",
+            estimate: "~65% — mission clarity emerging, execution gaining focus"
+          }
+        },
+        {
+          id: 2,
+          title: "Flow Readiness & Chaos Management",
+          dataSignals: [
+            "Embracing daily practices: meditation, writing, drawing, reading; committed to primary flow activity (e.g., boxing, kickboxing)",
+            "Feels discomfort with 'nothingness' post-corporate structure, leading to bouts of chaos and uncertainty",
+            "Actively seeking to build a clear goals list and 100-step roadmap to tame the chaos"
+          ],
+          analyticsInsight: {
+            strengths: ["Strong foundations in recovery and primary flow activity"],
+            risks: ["Needs clearer daily structure and sequencing of creative + goal-directed activities to stabilize nervous system and sustain momentum"]
+          },
+          suggestedMetric: {
+            name: "Flow Readiness Index",
+            description: "Composite of clear goals, creative practice consistency, flow activity time, and recovery adherence",
+            estimate: "~70% — good base, improving structured daily planning"
+          }
+        },
+        {
+          id: 3,
+          title: "Leadership Leverage + Market Testing",
+          dataSignals: [
+            "Desires to test advisory value beyond financial services: e.g., with founders, VCs, tech/creative sectors",
+            "Considering balanced portfolio (finance clients + founders) to explore adjacent markets while leveraging existing strengths",
+            "Interested in framing herself as a 21st-century human capital accelerator aligned with AI-era organizational needs"
+          ],
+          analyticsInsight: {
+            strengths: ["Clear articulation of target markets and unique leverage from KKR-scale HR infrastructure experience"],
+            risks: ["External network is thin; must be deliberately cultivated through Alliance contacts", "Risk of spending too much time on infrastructure vs. early market testing"]
+          },
+          suggestedMetric: {
+            name: "Leadership Leverage Score",
+            description: "Progress on white paper, advisory tests, and building targeted network",
+            estimate: "~65% — positioning sharpening, requires active outreach"
+          }
+        }
+      ],
+      dashboardMetrics: {
+        missionAlignment: 65,
+        flowReadiness: 70,
+        flowLeadership: 65
+      },
+      summary: {
+        topStrengths: ["Deep HR/organizational expertise with KKR-scale infrastructure experience", "Execution discipline and openness to AI tools", "Consistent creative practices (meditation, writing, drawing)", "Commitment to flow-inducing activities (boxing, kickboxing)", "Clear articulation of target markets and unique leverage"],
+        keyRisks: ["Overfocus on infrastructure vs. early market testing", "Fear of irrelevance in AI-disrupted organizational landscape", "Thin external network requiring deliberate cultivation", "Confidence lagging until proven in practice", "Risk of analysis paralysis vs. market action"],
+        nextAction: "Draft AI/org design white paper, test 3-5 advisory prototypes with diverse clients, engage Alliance + KKR portfolio for warm introductions"
+      }
     }
   };
 };

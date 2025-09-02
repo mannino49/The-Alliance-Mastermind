@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
-import { AuthProvider, useAuth } from './auth/AuthContext';
-import { ClientDataProvider } from './context/ClientDataContext';
+import { AuthProvider, useAuth } from './features/auth/AuthContext';
+import { ClientDataProvider } from './shared/context/ClientDataContext';
 import ProtectedRoute from './components/ProtectedRoute';
-import LandingPage from './components/LandingPage';
+import LandingPage from './components/dashboards/main/LandingPage';
 import LoginPage from './components/LoginPage';
-import PersonalHomepage from './components/PersonalHomepage';
-import RickDashboard from './components/RickDashboard';
-import BrianDashboard from './components/BrianDashboard';
-import AmityDashboard from './components/AmityDashboard';
-import StephanieDashboard from './components/StephanieDashboard';
-import RickSessinghausDashboard from './components/RickSessinghausDashboard';
-import BlairDashboard from './components/BlairDashboard';
-import RobDashboard from './components/RobDashboard';
-import MichaelDashboard from './components/MichaelDashboard';
-import JasonDashboard from './components/JasonDashboard';
-import JamesDashboard from './components/JamesDashboard';
-import GeofDashboard from './components/GeofDashboard';
-import AnatoliyDashboard from './components/AnatoliyDashboard';
-import SandraDashboard from './components/SandraDashboard';
-import BruceBowserDashboard from './components/BruceBowserDashboard';
+import PersonalHomepage from './components/dashboards/enhanced/PersonalHomepage';
+import RickDashboard from './components/dashboards/clients/RickDashboard';
+import BrianDashboard from './components/dashboards/clients/BrianDashboard';
+import AmityDashboard from './components/dashboards/clients/AmityDashboard';
+import StephanieDashboard from './components/dashboards/clients/StephanieDashboard';
+import RickSessinghausDashboard from './components/dashboards/clients/RickSessinghausDashboard';
+import BlairDashboard from './components/dashboards/clients/BlairDashboard';
+import RobDashboard from './components/dashboards/clients/RobDashboard';
+import MichaelDashboard from './components/dashboards/clients/MichaelDashboard';
+import JasonDashboard from './components/dashboards/clients/JasonDashboard';
+import JamesDashboard from './components/dashboards/clients/JamesDashboard';
+import GeofDashboard from './components/dashboards/clients/GeofDashboard';
+import AnatoliyDashboard from './components/dashboards/clients/AnatoliyDashboard';
+import SandraDashboard from './components/dashboards/clients/SandraDashboard';
+import BruceBowserDashboard from './components/dashboards/clients/BruceBowserDashboard';
 
 function AppContent() {
   const [currentPage, setCurrentPage] = useState('landing');
@@ -82,7 +82,7 @@ function AppContent() {
             ) : (
               <button 
                 onClick={() => setCurrentPage('login')}
-                className="px-3 py-2 rounded bg-green-600 hover:bg-green-700 transition-colors"
+                className="px-3 py-2 rounded bg-pink-600 hover:bg-pink-700 transition-colors"
               >
                 Sign In
               </button>

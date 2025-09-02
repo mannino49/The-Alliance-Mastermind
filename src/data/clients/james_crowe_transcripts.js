@@ -263,8 +263,4 @@ export const jamesCroweConversationSummary = {
   ]
 };
 
-// Export for use in chatbot system
-export default {
-  transcripts: jamesCroweTranscripts,
-  summary: jamesCroweConversationSummary
-};
+// Already exported above at line 217

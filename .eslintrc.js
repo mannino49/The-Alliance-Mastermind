@@ -1,0 +1,10 @@
+module.exports = {
+  extends: [
+    'react-app',
+    'react-app/jest'
+  ],
+  rules: {
+    'no-unused-vars': 'warn',
+    'import/no-anonymous-default-export': 'warn'
+  }
+};

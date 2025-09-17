@@ -100,7 +100,7 @@ export default function BruceBowserDashboard() {
           </div>
           <Sparkline data={weeklyData.missionAlignment} />
           <p className="mt-4 text-gray-300">
-            70% of effort advancing priority vet + healthcare innovations. Bruce is fully immersed in pet space with 10 subscription vet clinics built/open, oral health device, and pet-friendly housing design. Strong creative process framework application.
+            70% of effort advancing priority medical network and public health innovations. Bruce is CEO of Nova Scotia's largest public/private medical network, focusing on healthcare delivery improvements and system optimization. Strong creative process framework application.
           </p>
         </div>
         
@@ -126,7 +126,7 @@ export default function BruceBowserDashboard() {
           </div>
           <Sparkline data={weeklyData.flowLeadership} />
           <p className="mt-4 text-gray-300">
-            Creative leadership breakthrough: Bruce now owns his role as visionary + innovator, not just business operator. Actively testing leadership in creative incubation cycles and extending to challenge medical experts, moving teams from analysis paralysis to innovation.
+            Creative leadership breakthrough: Bruce now owns his role as healthcare system visionary + innovator, not just network operator. Actively testing leadership in creative incubation cycles and extending to challenge medical professionals across the network, moving teams from analysis paralysis to innovation.
           </p>
         </div>
       </div>
@@ -245,7 +245,7 @@ export default function BruceBowserDashboard() {
           <h2 className="text-xl font-semibold text-primary-100 mb-4">Top Strengths</h2>
           <ul className="list-disc pl-5 space-y-2">
             <li>Creative leadership breakthrough and identity shift</li>
-            <li>Bold innovation across pet + healthcare industries</li>
+            <li>Bold innovation across medical network and public health systems</li>
             <li>Cross-industry vision and application</li>
             <li>Strong creative process framework (prep → incubation → illumination → verification)</li>
             <li>High flow capacity and creative energy</li>
@@ -257,7 +257,7 @@ export default function BruceBowserDashboard() {
         <div className="bg-dark-800 p-6 rounded-xl shadow-xl">
           <h2 className="text-xl font-semibold text-primary-100 mb-4">Key Risks</h2>
           <ul className="list-disc pl-5 space-y-2">
-            <li>Dilution across multiple innovation tracks (vet clinics, pet housing, pharma, human healthcare)</li>
+            <li>Dilution across multiple innovation tracks (medical network expansion, public health initiatives, system optimization)</li>
             <li>Recovery inconsistency and over-excitement leading to burnout</li>
             <li>Risk of burnout from high stimulation without planned recovery</li>
             <li>Need to systematize recovery practices and dopamine management</li>
@@ -276,7 +276,7 @@ export default function BruceBowserDashboard() {
             <ol className="list-decimal pl-5 space-y-2">
               <li>Systematize recovery practices: shift sauna to evening, add reading/food/TV wind-downs</li>
               <li>Build "dopamine flush" routines with exercise bursts and meditation</li>
-              <li>Sequence innovation tracks to prevent dilution (vet clinics → pet housing → human healthcare)</li>
+              <li>Sequence innovation tracks to prevent dilution (network optimization → public health initiatives → system expansion)</li>
               <li>Tighten feedback loops and pace incubation cycles (24-48h vs 60-90d depending on project)</li>
               <li>Continue leveraging creative leadership identity and challenging medical experts</li>
             </ol>
@@ -299,7 +299,7 @@ export default function BruceBowserDashboard() {
         <h2 className="text-xl font-semibold text-primary-100 mb-4">Coach Notes</h2>
         <div className="prose max-w-none">
           <p>
-            Bruce has achieved a significant creative leadership breakthrough, fully immersing himself in the pet space with 10 subscription vet clinics already built/open, plus oral health device and pet-friendly housing design projects. He's actively applying the creative process framework (prep → incubation → illumination → verification) and extending innovation into human healthcare.
+            Bruce has achieved a significant creative leadership breakthrough, fully immersing himself as CEO of Nova Scotia's largest public/private medical network. He's actively applying the creative process framework (prep → incubation → illumination → verification) and extending innovation across healthcare delivery, system optimization, and public health initiatives.
           </p>
           <p className="mt-4">
             He reports being "jacked up" with excitement from projects and struggles to wind down. His morning routines are strong (sauna, meditation, cold plunge), and he's experimenting with using sauna + Vipassana post-flow to downshift and manage dopamine/norepinephrine spikes. He uses guitar, walks, humor, and sketching as microdosing tools.
@@ -308,7 +308,7 @@ export default function BruceBowserDashboard() {
             Bruce has made a crucial identity shift from seeing himself as an operator to embracing his creative leadership role. He's actively testing leadership in creative incubation cycles, moving teams from analysis paralysis to innovation, and extending this to challenge medical experts (orthopedic surgeons vs. gastroenterologists).
           </p>
           <p className="mt-4">
-            The main challenge is managing the breadth of innovation tracks (vet clinics, pet housing, pharma, human healthcare) without dilution. He needs to systematize recovery practices, build "dopamine flush" routines, and tighten feedback loops for incubation cycles (24-48h vs 60-90d depending on project).
+            The main challenge is managing the breadth of innovation tracks (medical network optimization, public health initiatives, system expansion, healthcare delivery improvements) without dilution. He needs to systematize recovery practices, build "dopamine flush" routines, and tighten feedback loops for incubation cycles (24-48h vs 60-90d depending on project).
           </p>
           <p className="mt-4">
             Recommend focusing on sequencing innovations strategically while building consistent recovery practices. Bruce should leverage his creative leadership breakthrough while managing over-excitement through structured recovery and tighter feedback loops to sustain momentum without burnout.

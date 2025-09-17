@@ -19,6 +19,7 @@ import GeofDashboard from './components/dashboards/clients/GeofDashboard';
 import AnatoliyDashboard from './components/dashboards/clients/AnatoliyDashboard';
 import SandraDashboard from './components/dashboards/clients/SandraDashboard';
 import BruceBowserDashboard from './components/dashboards/clients/BruceBowserDashboard';
+import CourtneyDashboard from './components/dashboards/clients/CourtneyDashboard';
 
 function AppContent() {
   const [currentPage, setCurrentPage] = useState('landing');
@@ -234,6 +235,15 @@ function AppContent() {
             <div>
               <ClientDashboardHeader clientName="Bruce Bowser" />
               <BruceBowserDashboard />
+            </div>
+          </ProtectedRoute>
+        );
+      case 'courtney':
+        return (
+          <ProtectedRoute>
+            <div>
+              <ClientDashboardHeader clientName="Courtney Karnes" />
+              <CourtneyDashboard />
             </div>
           </ProtectedRoute>
         );

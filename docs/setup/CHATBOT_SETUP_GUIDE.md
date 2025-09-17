@@ -39,10 +39,10 @@ npm start
 
 ### **Intelligent Coaching**
 - **Steven Kotler AI Coach** - Expert flow science and peak performance guidance
-- **Personalized Insights** based on individual client data and archetype
+- **Personalized Insights** based on individual client data and profile
 - **Performance Analysis** with provocative, challenging, and actionable advice
-- **Archetype-Specific Guidance** tailored to client type and mission
-- **Comparison Analysis** with other clients and archetypes
+- **Profile-Specific Guidance** tailored to client type and mission
+- **Comparison Analysis** with other clients and profiles
 
 ### **Data-Driven Responses**
 - **Flow Readiness Scores** - Sleep, recovery, creativity, structure
@@ -60,7 +60,7 @@ npm start
 
 The chatbot has access to comprehensive data for all 15 clients:
 
-| Client | Archetype | Flow Readiness | Leadership Leverage |
+| Client | Profile Type | Flow Readiness | Leadership Leverage |
 |--------|-----------|----------------|-------------------|
 | Rick Watkin | Visionary | 45/100 | 60/100 |
 | Amity Cooper | Catalyst | 70/100 | 75/100 |
@@ -86,7 +86,7 @@ The chatbot has access to comprehensive data for all 15 clients:
 - Growth opportunity identification
 
 ### **Comparative Insights**
-- Archetype-based comparisons
+- Profile-based comparisons
 - Performance benchmarking
 - Success pattern identification
 - Learning from top performers
@@ -114,9 +114,9 @@ The chatbot has access to comprehensive data for all 15 clients:
 **Q:** "What are my key areas for growth?"
 **A:** As Steven Kotler, the AI will diagnose your flow bottlenecks with precision, challenge you to face uncomfortable truths, provide neuroscience-backed tools for breakthrough, and structure the response with Insight, Challenge, Tool/Practice, and Quote.
 
-### **Archetype Insights**
-**Q:** "How can I leverage my archetype strengths?"
-**A:** As Steven Kotler, the AI will use your archetype data to provide provocative insights about your natural advantages, challenge you to stop dabbling and fully commit, offer archetype-specific tools and practices, and push you toward 10x execution.
+### **Profile Insights**
+**Q:** "How can I leverage my profile strengths?"
+**A:** As Steven Kotler, the AI will use your profile data to provide provocative insights about your natural advantages, challenge you to stop dabbling and fully commit, offer profile-specific tools and practices, and push you toward 10x execution.
 
 ### **Action Planning**
 **Q:** "What specific actions should I take this week?"
@@ -225,13 +225,13 @@ Each dashboard uses a specific client ID that matches the data:
 - Keep conversations focused and actionable
 - Use specific questions for better responses
 - Reference the client's data in questions
-- Test with different archetypes and scenarios
+- Test with different profiles and scenarios
 
 ---
 
 ## 🎉 Ready to Go!
 
-Your chatbot is now fully configured with OpenAI integration. Each client will have access to personalized, intelligent coaching based on their performance data and archetype.
+Your chatbot is now fully configured with OpenAI integration. Each client will have access to personalized, intelligent coaching based on their performance data and profile.
 
 **Next steps:**
 1. Run the integration script to add chatbot to all dashboards

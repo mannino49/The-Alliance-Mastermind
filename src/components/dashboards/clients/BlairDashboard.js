@@ -209,7 +209,7 @@ export default function BlairDashboard() {
             <div className="text-3xl font-bold text-blue-300">60%</div>
           </div>
           <p className="text-sm text-blue-100">
-            % of time advancing chosen strategic next step (PhD prep, workshop development, or vet leadership pilot)
+            % of time advancing chosen strategic next step (exit framework development, business reorganization, and workshop pilots)
           </p>
           <div className="mt-3 bg-blue-900/30 rounded-lg p-3">
             <p className="text-xs text-blue-200">
@@ -245,7 +245,7 @@ export default function BlairDashboard() {
           </p>
           <div className="mt-3 bg-purple-900/30 rounded-lg p-3">
             <p className="text-xs text-purple-200">
-              <span className="font-medium">Estimate:</span> ~65% — rising with her prep for talks and deeper intellectual integration
+              <span className="font-medium">Estimate:</span> ~65% — rising with his prep for talks and deeper intellectual integration
             </p>
           </div>
         </div>
@@ -299,10 +299,10 @@ export default function BlairDashboard() {
           <div>
             <h3 className="font-medium text-primary-300">Next Steps:</h3>
             <ol className="list-decimal pl-5 space-y-2">
-              <li>Narrow near-term focus: PhD prep + 1 pilot project (not all directions simultaneously)</li>
+              <li>Narrow near-term focus: Exit framework development + 1 pilot project (not all directions simultaneously)</li>
               <li>Codify flow rituals for travel/chaos periods to maintain stability</li>
               <li>Leverage talks and workshops for credibility building</li>
-              <li>Sequence academic foundations before broader thought leadership scaling</li>
+              <li>Sequence exit framework foundations before broader thought leadership scaling</li>
               <li>Create 100-item roadmap for strategic direction clarity</li>
             </ol>
           </div>
@@ -310,10 +310,10 @@ export default function BlairDashboard() {
           <div>
             <h3 className="font-medium text-primary-300">30-Day Goals:</h3>
             <ul className="list-disc pl-5 space-y-2">
-              <li>Choose between PhD prep OR workshop development (not both)</li>
-              <li>Pilot flow framework for vets as credibility foundation</li>
+              <li>Choose between exit framework development OR workshop development (not both)</li>
+              <li>Pilot exit framework for small businesses as credibility foundation</li>
               <li>Establish flow rituals for household chaos and travel transitions</li>
-              <li>Complete academic writing muscle strengthening with research citations</li>
+              <li>Complete business writing muscle strengthening with diverse storytelling styles</li>
             </ul>
           </div>
         </div>
@@ -324,16 +324,16 @@ export default function BlairDashboard() {
         <h2 className="text-xl font-semibold text-primary-100 mb-4">Coach Notes</h2>
         <div className="prose max-w-none">
           <p>
-            Blair continues to hold a clear MTP around wellbeing, flow, and leadership, but the past two months show meaningful refinement. She is letting go of guilt/shame around downtime and summer chaos, trusting that September will bring structure and acceleration.
+            Blair continues to hold a clear MTP around helping small business owners exit well, integrating business, financial, and personal planning. The past two months show meaningful refinement as he develops his comprehensive exit framework system.
           </p>
           <p className="mt-4">
-            She is exploring academic/scientific pathways (PhD, neuroscience, neurotheology) while also piloting talks and workshops. There's a strong pull toward bridging science, spirituality, and practical leadership applications. The direction is sharpening with "flow for vets" still in play, but she's actively shaping a broader integrative leadership/science path.
+            He is developing his exit framework for small business owners under $5M while also piloting talks and workshops. There's a strong pull toward bridging business, financial, and personal planning applications. The direction is sharpening with his core focus on comprehensive exit strategies, and he's actively building his systematic approach to business transitions.
           </p>
           <p className="mt-4">
-            Major psychological upgrade with reduced guilt/shame around downtime leading to better resilience. Increased primary flow & active recovery during summer, sleep stability improving, shift from fear-driven to flow-driven recovery. However, still vulnerable to post-travel crashes, chaotic household demands, and operational overload at the clinics.
+            Major psychological upgrade with improved work-life balance and better resilience in managing his financial planning firm. Increased focus on creativity and flow during business reorganization, with improving protocols for managing high-energy creative work. However, still challenged by firm reorganization demands and carving out time for creative microdosing.
           </p>
           <p className="mt-4">
-            Rising leverage potential with academic rigor and relatability. Actively preparing talks, referencing research papers, strengthening academic writing muscles, exploring intersection of flow, spirituality, neuroscience, and leadership. Needs sequencing: vet credibility + academic foundations → then broader thought leadership scaling.
+            Rising leverage potential with business expertise and storytelling capabilities. Actively preparing talks, expanding writing skills beyond business writing, strengthening communication through diverse writing styles. Needs sequencing: exit framework development → credibility building through successful client outcomes → then broader thought leadership scaling in business transitions.
           </p>
         </div>
       </div>

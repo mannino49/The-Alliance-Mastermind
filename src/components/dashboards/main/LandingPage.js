@@ -17,7 +17,7 @@ export default function LandingPage({ onLoginSuccess }) {
             The Alliance Mastermind
           </h1>
           <p className="text-lg mt-2 text-pink-100">
-            Creativity Velocity Accelerator
+            Peak Performance Blueprint
           </p>
         </div>
 
@@ -29,6 +29,15 @@ export default function LandingPage({ onLoginSuccess }) {
           Sign In
         </button>
       </div>
+
+      {/* Copyright Footer */}
+      <footer className="py-6 mt-16">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-gray-400 text-sm">
+            © 2025 The Alliance. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

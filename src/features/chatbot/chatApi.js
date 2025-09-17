@@ -13,6 +13,7 @@ export const mockChatAPI = async (messages, currentClientId) => {
   const archetypeMatch = systemContext.match(/Creative Archetype: ([^\n]+)/);
   const archetype = archetypeMatch ? archetypeMatch[1] : 'Unknown';
   
+  
   const missionMatch = systemContext.match(/Mission Statement: ([^\n]+)/);
   const mission = missionMatch ? missionMatch[1] : 'Unknown';
   
@@ -292,37 +293,39 @@ Start with the sleep experiment - I predict you'll see immediate improvements in
     response = `Great question about your archetype! As a ${archetype}, you have unique characteristics:
 
 **Your Archetype Profile:**
-• **Natural Strengths**: Visionary thinking, mission clarity, inspiring others
-• **Flow Style**: You thrive in creative, forward-thinking environments
-• **Leadership Approach**: You lead through vision and inspiration
+• **Type**: ${archetype}
+• **Mission**: ${mission}
+• **Flow Readiness**: ${flowReadiness}/100
+• **Leadership Leverage**: ${leadershipScore}/100
 
 **How ${archetype}s Excel:**
-• Creating compelling future visions
-• Motivating teams toward big goals
-• Seeing patterns and opportunities others miss
-• Balancing innovation with execution
+• Natural strengths in creative thinking and innovation
+• Strong vision and mission alignment
+• Ability to inspire and lead others
+• High drive and motivation
 
 **Your Archetype's Flow Triggers:**
-• **Creative Challenges**: Complex problems that require innovative thinking
-• **Vision Work**: Time spent planning and imagining future possibilities
-• **Team Collaboration**: Working with others to bring ideas to life
-• **Mission Alignment**: Activities that connect to your larger purpose
+• Creative problem-solving and ideation
+• Vision work and strategic planning
+• Team collaboration and leadership
+• Mission-aligned projects
 
 **Growth Areas for ${archetype}s:**
-• Building consistent daily routines
-• Balancing vision with execution
-• Managing energy and recovery
-• Translating big ideas into actionable steps
+• Sleep and recovery optimization
+• Consistent routine development
+• Flow state maintenance
+• Energy management
 
 **Your Specific Advantages:**
-• Your mission alignment is exceptional (80/20 business/personal)
-• Your leadership leverage shows you're already modeling flow principles
+• Your mission alignment is exceptional
 • Your team orientation leverages your archetype's natural strengths
+• Your drive and motivation are archetype-typical
 
 **Archetype-Specific Recommendations:**
-• Schedule "vision time" - dedicated periods for creative thinking
-• Use your mission clarity to prioritize flow activities
-• Leverage your team orientation to create flow-friendly environments
+• Focus on recovery practices that support creative flow
+• Build routines that honor your natural energy patterns
+• Use your vision skills to inspire team flow states
+• Balance creative work with structured execution
 
 Your archetype is perfectly suited for your current mission and leadership role!`;
   } else if (lastMessage.toLowerCase().includes('toolkit')) {
@@ -880,7 +883,7 @@ Ready to commit to this 30-day validation experiment?`;
 **RELATIONSHIP PATTERN:**
 • Your leadership leverage (${leadershipScore}/100) improves when you [specific behavior]
 • This is opposite to what most ${archetype} types experience
-• **Hidden Insight**: Your leadership style is more unique than typical archetype templates
+• **Hidden Insight**: Your leadership style is more unique than typical templates
 
 **MOST SURPRISING INSIGHT:**
 The combination of your strengths (${topStrengths}) creates a unique capability that's rare in your field. Most people with your archetype focus on [typical path], but your data suggests you're designed for [unique approach].
@@ -980,7 +983,7 @@ What part of your story arc resonates most strongly with your current experience
     response = `Hello ${currentClient}! I'm your Alliance Mastermind AI Coach.
 
 **Your Current Profile:**
-• Creative Archetype: ${archetype}
+• Profile Type: [Profile Type]
 • Mission: ${mission}
 • Flow Readiness: ${flowReadiness}/100
 • Leadership Leverage: ${leadershipScore}/100
@@ -1028,9 +1031,9 @@ export const callOpenAI = async (messages, currentClientId) => {
         'Authorization': `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`
       },
       body: JSON.stringify({
-        model: 'gpt-4',
+        model: 'gpt-4o',
         messages: enhancedMessages,
-        max_tokens: 1000,
+        max_tokens: 5000,
         temperature: 0.7,
         stream: false,
         presence_penalty: 0.1,

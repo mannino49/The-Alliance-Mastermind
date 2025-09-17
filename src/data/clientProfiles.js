@@ -4,8 +4,8 @@
 export const clientProfiles = [
   {
     name: 'Rick Watkin',
-    archetype: 'The Visionary',
     mission: 'Business/Personal Mission',
+    archetype: 'The Visionary',
     flowReadinessScore: 45,
     leadershipLeverageScore: 60,
     topStrengths: ['Clear mission', 'High drive', 'Team-oriented'],
@@ -13,8 +13,8 @@ export const clientProfiles = [
   },
   {
     name: 'Rick Sessinghaus',
-    archetype: 'The Creator',
     mission: 'AI Product/Book Focus',
+    archetype: 'The Creator',
     flowReadinessScore: 60,
     leadershipLeverageScore: 70,
     missionAlignmentScore: 65,
@@ -38,8 +38,8 @@ export const clientProfiles = [
   },
   {
     name: 'Brian Camastral',
-    archetype: 'The Orchestrator',
     mission: 'Curiosity/Passion Vector - Collective Flow Leadership',
+    archetype: 'The Orchestrator',
     flowReadinessScore: 55,
     leadershipLeverageScore: 65,
     missionAlignmentScore: 70,
@@ -64,8 +64,8 @@ export const clientProfiles = [
   },
   {
     name: 'Amity Cooper',
-    archetype: 'The MTP Driver',
     mission: 'MTP Focus',
+    archetype: 'The MTP Driver',
     flowReadinessScore: 50,
     leadershipLeverageScore: 55,
     topStrengths: ['Clear prioritization', 'Intuitive flow access', 'Visionary leadership'],
@@ -73,8 +73,8 @@ export const clientProfiles = [
   },
   {
     name: 'Stephanie Van Deynze',
-    archetype: 'The Leader',
     mission: 'Veterinary/Leadership Focus',
+    archetype: 'The Leader',
     flowReadinessScore: 60,
     leadershipLeverageScore: 55,
     topStrengths: ['Clear MTP', 'Solid habits', 'Authentic passion'],
@@ -82,8 +82,8 @@ export const clientProfiles = [
   },
   {
     name: 'Blair Lukan',
-    archetype: 'The System Builder',
     mission: 'Exit Framework Focus',
+    archetype: 'The System Builder',
     flowReadinessScore: 72,
     leadershipLeverageScore: 68,
     missionAlignmentScore: 75,
@@ -105,8 +105,8 @@ export const clientProfiles = [
   },
   {
     name: 'Rob Finlay',
-    archetype: 'The Community Builder',
     mission: 'Multiple Projects',
+    archetype: 'The Community Builder',
     flowReadinessScore: 55,
     leadershipLeverageScore: 65,
     topStrengths: ['Entrepreneurial energy', 'Creative vision', 'Community builder'],
@@ -114,8 +114,8 @@ export const clientProfiles = [
   },
   {
     name: 'Michael Whitaker',
-    archetype: 'The Innovator',
     mission: 'AI-Human Creativity',
+    archetype: 'The Innovator',
     flowReadinessScore: 75,
     leadershipLeverageScore: 70,
     missionAlignmentScore: 70,
@@ -124,8 +124,8 @@ export const clientProfiles = [
   },
   {
     name: 'Jason Tadros',
-    archetype: 'The Systems Thinker',
     mission: 'AI/Math Innovation',
+    archetype: 'The Systems Thinker',
     flowReadinessScore: 60,
     leadershipLeverageScore: 70,
     missionAlignmentScore: 70,
@@ -138,8 +138,8 @@ export const clientProfiles = [
   },
   {
     name: 'James Crowe',
-    archetype: 'The Scientist',
     mission: 'Antibody Treatments',
+    archetype: 'The Scientist',
     flowReadinessScore: 60,
     leadershipLeverageScore: 65,
     topStrengths: ['Scientific innovation', 'Recovery discipline', 'Team vision'],
@@ -147,8 +147,8 @@ export const clientProfiles = [
   },
   {
     name: 'Geoffrey Garth',
-    archetype: 'The Inventor',
     mission: 'Hands-on Invention',
+    archetype: 'The Inventor',
     flowReadinessScore: 70,
     leadershipLeverageScore: 75,
     missionProgressScore: 65,
@@ -159,8 +159,8 @@ export const clientProfiles = [
   },
   {
     name: 'Anatoliy Otchkovskiy',
-    archetype: 'The Transformer',
     mission: 'Company Transformation',
+    archetype: 'The Transformer',
     flowReadinessScore: 65,
     leadershipLeverageScore: 63,
     missionAlignmentScore: 62,
@@ -172,8 +172,8 @@ export const clientProfiles = [
   },
   {
     name: 'Sandra Ozols',
-    archetype: 'The Transitioner',
     mission: 'Career Transition',
+    archetype: 'The Transitioner',
     flowReadinessScore: 45,
     leadershipLeverageScore: 50,
     topStrengths: ['Adaptability', 'Learning mindset', 'Resilience'],
@@ -181,8 +181,8 @@ export const clientProfiles = [
   },
   {
     name: 'Bruce Bowser',
-    archetype: 'The Disruptor',
     mission: 'Veterinary Innovation',
+    archetype: 'The Disruptor',
     flowReadinessScore: 60,
     leadershipLeverageScore: 70,
     missionAlignmentScore: 70,
@@ -204,6 +204,35 @@ export const clientProfiles = [
     ],
     hasTranscriptData: true,
     transcriptFile: 'bruce_bowser_transcripts.js'
+  },
+  {
+    name: 'Courtney Karnes',
+    mission: 'Unifying Personal/Professional Systems - MTP Development',
+    archetype: 'The Systematizer',
+    flowReadinessScore: 58,
+    leadershipLeverageScore: 64,
+    missionAlignmentScore: 62,
+    clarityExecutionScore: 68,
+    creativityIncubationScore: 55,
+    emergentTrustScore: 60,
+    topStrengths: [
+      '1:1 coaching and seeing latent strengths in others',
+      'Team building and catalyzing movements/collectives',
+      'High energy as "invisible skill" that elevates rooms/teams',
+      'Clarity discipline and specificity-driven execution',
+      'Adaptability, resilience, and strong social support',
+      'Fast pattern recognition and creative problem-solving'
+    ],
+    keyRisks: [
+      'Information diet - self-identifies as "noise junkie"',
+      'Incubation gap - fast pattern recognition without scheduled incubation',
+      'AI over-production without integration (insight debt)',
+      'Concept vagueness slowing execution (thriving, purpose, community)',
+      'Opportunity overload and overcommitment tendency',
+      'Over-immersion without recovery balance'
+    ],
+    hasTranscriptData: true,
+    transcriptFile: 'courtney_karnes_transcripts.js'
   }
 ];
 
@@ -213,6 +242,7 @@ export const findClientProfileByName = (name) => {
     profile.name.toLowerCase() === name.toLowerCase()
   );
 };
+
 
 // Helper function to find client profile by archetype
 export const findClientProfilesByArchetype = (archetype) => {

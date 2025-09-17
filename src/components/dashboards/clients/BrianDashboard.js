@@ -100,7 +100,7 @@ export default function BrianDashboard() {
           </div>
           <Sparkline data={weeklyData.flowReadiness} />
           <p className="mt-4 text-gray-300">
-            Integration of grounding practices and relational truth-telling reps. Acknowledged relational blind spot and experimenting with truth-telling and gratitude practices. Nature remains strongest grounding flow practice.
+            Integration of grounding practices and honest communication exercises. Acknowledged relational blind spot and experimenting with truth-telling and gratitude practices. Nature remains strongest grounding flow practice.
           </p>
         </div>
         
@@ -137,7 +137,7 @@ export default function BrianDashboard() {
           
           <div className="mb-3">
             <div className="flex justify-between mb-1">
-              <span>Relational Truth-Telling</span>
+              <span>Honest Communication</span>
               <span>60%</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-2.5">
@@ -195,7 +195,7 @@ export default function BrianDashboard() {
           <h2 className="text-xl font-semibold text-primary-100 mb-4">Key Risks</h2>
           <ul className="list-disc pl-5 space-y-2">
             <li>Risk of lingering in design/positioning mode</li>
-            <li>Relational distance and resistance to vulnerability</li>
+            <li>Tendency to avoid emotional vulnerability and keep relationships at surface level</li>
             <li>Dilution across too many offers instead of focus</li>
             <li>Need for early pilots to validate positioning</li>
             <li>Staying too long in prep mode without market testing</li>

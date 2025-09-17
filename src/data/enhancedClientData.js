@@ -6,8 +6,8 @@ export const enhancedClientProfiles = [
     // Basic Profile Info
     id: 'briancamastral',
     name: 'Brian Camastral',
-    archetype: 'The Orchestrator',
     mission: 'Curiosity/Passion Vector',
+    archetype: 'The Orchestrator',
     
     // Core Scores
     flowReadinessScore: 55,

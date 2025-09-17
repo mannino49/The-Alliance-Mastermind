@@ -300,7 +300,7 @@ export default function RobDashboard() {
       
       {/* AI Chatbot */}
       <ClientChatbot 
-        currentClientId="rob finlay"
+        currentClientId="robfinlay"
         allClientData={allClientData}
       />
     </div>

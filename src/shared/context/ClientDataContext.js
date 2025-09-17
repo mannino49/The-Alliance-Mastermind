@@ -5,6 +5,8 @@ import { clientProfiles } from '../../data/clientProfiles';
 import { getAllClientInsights } from '../utils/insightsLoaderSimple';
 import { jamesCroweConversationSummary } from '../../data/clients/james_crowe_transcripts';
 import { brianCamastralTranscript } from '../../data/clients/brian_camastral_data';
+import { courtneyKarnesTranscripts } from '../../data/clients/courtney_karnes_transcripts';
+import robFinlayData from '../../data/clients/rob_finlay_data';
 
 const ClientDataContext = createContext();
 
@@ -33,8 +35,8 @@ export const ClientDataProvider = ({ children }) => {
       return {
         id: profile.name.toLowerCase().replace(/\s+/g, ''), // Generate ID from name
         name: profile.name,
-        archetype: profile.archetype,
         mission: profile.mission,
+        archetype: profile.archetype,
         flowReadinessScore: profile.flowReadinessScore,
         leadershipLeverageScore: profile.leadershipLeverageScore,
         // Add new metrics if available
@@ -61,7 +63,9 @@ export const ClientDataProvider = ({ children }) => {
         detailedInsights: clientInsights || null,
         // Add conversation history for specific clients
         conversationHistory: profile.name === 'James Crowe' ? jamesCroweConversationSummary : 
-                           profile.name === 'Brian Camastral' ? brianCamastralTranscript : null
+                           profile.name === 'Brian Camastral' ? brianCamastralTranscript :
+                           profile.name === 'Courtney Karnes' ? courtneyKarnesTranscripts :
+                           profile.name === 'Rob Finlay' ? robFinlayData : null
       };
     });
 
@@ -73,6 +77,7 @@ export const ClientDataProvider = ({ children }) => {
   const getClientById = (clientId) => {
     return allClientData.find(client => client.id === clientId);
   };
+
 
   const getClientsByArchetype = (archetype) => {
     return allClientData.filter(client => client.archetype === archetype);
@@ -116,6 +121,7 @@ export const ClientDataProvider = ({ children }) => {
 
     return stats;
   };
+
 
   const getPerformanceInsights = (clientId) => {
     const client = getClientById(clientId);

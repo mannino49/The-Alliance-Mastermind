@@ -29,7 +29,7 @@ const LoginPage = ({ onLoginSuccess }) => {
       <div className="max-w-md w-full space-y-8 p-8">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-white">Sign In</h2>
-          <p className="mt-2 text-gray-300">Creativity Velocity Accelerator</p>
+          <p className="mt-2 text-gray-300">Peak Performance Blueprint</p>
         </div>
         
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>

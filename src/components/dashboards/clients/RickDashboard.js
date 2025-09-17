@@ -342,7 +342,7 @@ export default function RickDashboard() {
           
           <div>
             <h3 className="text-lg font-medium text-primary-300 mb-3">Coach Notes</h3>
-            <div className="bg-gray-50 p-4 rounded border border-gray-200">
+            <div className="bg-dark-700 p-4 rounded border border-gray-600">
               <p className="text-gray-300 italic mb-2">
                 "Rick has made a major breakthrough in recognizing cognitive load as his real limiter, distinguishing it from physical energy. 
                 His 100-step reverse engineering exercise proved pivotal for mission clarity and execution anchoring."
@@ -351,7 +351,7 @@ export default function RickDashboard() {
                 "The key focus now is systematizing boundary language and shifting from urgency bias to importance filtering. 
                 His brand evolution from golf expert to peak performance authority shows strong strategic thinking."
               </p>
-              <div className="mt-3 text-sm text-black font-medium text-right bg-white rounded px-2 py-1 inline-block ml-auto">- Alliance Mastermind AI Coach, August 2025</div>
+              <div className="mt-3 text-sm text-gray-300 font-medium text-right bg-dark-800 rounded px-2 py-1 inline-block ml-auto">- Alliance Mastermind AI Coach, August 2025</div>
             </div>
           </div>
         </div>

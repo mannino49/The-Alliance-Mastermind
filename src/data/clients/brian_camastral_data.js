@@ -129,8 +129,8 @@ export const brianCamastralTranscript = {
 // Enhanced client profile with transcript data
 export const brianCamastralEnhancedProfile = {
   name: 'Brian Camastral',
-  archetype: 'The Orchestrator',
   mission: 'Curiosity/Passion Vector - Collective Flow Leadership',
+  archetype: 'The Orchestrator',
   flowReadinessScore: 55,
   leadershipLeverageScore: 65,
   missionAlignmentScore: 70,

@@ -5,8 +5,8 @@ const robFinlayData = {
   // Basic Profile Info
   id: 'robfinlay',
   name: 'Rob Finlay',
-  archetype: 'The Community Builder',
   mission: 'Multiple Projects',
+  archetype: 'The Community Builder',
   
   // Core Scores (from your coaching insights)
   flowReadinessScore: 55,

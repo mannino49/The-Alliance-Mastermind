@@ -6,6 +6,8 @@ import { bruceBowserTranscripts } from '../../../data/clients/bruce_bowser_trans
 import { blairLukanTranscripts } from '../../../data/clients/blair_lukan_transcripts';
 import { rickSessinghausTranscripts } from '../../../data/clients/rick_sessinghaus_transcripts';
 import { stephanieVanDeynzeSnellTranscripts } from '../../../data/clients/stephanie_van_deynze_snell_transcripts';
+import { courtneyKarnesTranscripts } from '../../../data/clients/courtney_karnes_transcripts';
+import robFinlayData from '../../../data/clients/rob_finlay_data';
 
 const ClientChatbot = ({ currentClientId, allClientData }) => {
   const [messages, setMessages] = useState([
@@ -293,6 +295,90 @@ ${stephanieVanDeynzeSnellTranscripts.nextSteps.map(step => `• ${step}`).join('
 
 **COACHING FOCUS:**
 ${stephanieVanDeynzeSnellTranscripts.coachingFocus.map(focus => `• ${focus}`).join('\n')}
+` : ''}
+
+${currentClient && currentClient.name === 'Courtney Karnes' ? `
+**COURTNEY KARNES CONVERSATION HISTORY (June-August 2025 - Multiple Sessions):**
+
+**SESSION 1 - 30min Zoom Call (June 20, 2025):**
+${courtneyKarnesTranscripts.session1.keyInsights.map(insight => `• ${insight}`).join('\n')}
+
+**SESSION 2 - 30min Zoom Call (June 20, 2025):**
+${courtneyKarnesTranscripts.session2.keyInsights.map(insight => `• ${insight}`).join('\n')}
+
+**SESSION 3 - 30min Zoom Call (August 12, 2025):**
+${courtneyKarnesTranscripts.session3.keyInsights.map(insight => `• ${insight}`).join('\n')}
+
+**SESSION 4 - 30min Zoom Call (August 12, 2025):**
+${courtneyKarnesTranscripts.session4.keyInsights.map(insight => `• ${insight}`).join('\n')}
+
+**KEY THEMES:**
+${Object.entries(courtneyKarnesTranscripts.themes).map(([theme, items]) => `
+• ${theme.charAt(0).toUpperCase() + theme.slice(1)}:
+  ${items.map(item => `  - ${item}`).join('\n')}
+`).join('')}
+
+**KEY QUOTES:**
+${courtneyKarnesTranscripts.quotes.map(quote => `• "${quote}"`).join('\n')}
+
+**COACHING RECOMMENDATIONS:**
+${courtneyKarnesTranscripts.recommendations.map(rec => `• ${rec}`).join('\n')}
+
+**CURRENT FOCUS AREAS:**
+• MTP roadmap development with clear pillar structure
+• Testing three verticals: CEO whisperer, team builder, thought leader
+• Creativity microdosing experiments (5x/week, 3x/week, 2-hour blocks)
+• Vipassana meditation for mental clarity and input management
+• Storytelling expertise development
+• Trust and emergence vs control mindset
+• Anti-fragility through proper time and energy management
+
+**ACTION ITEMS FROM SESSIONS:**
+${courtneyKarnesTranscripts.session1.actionItems.map(action => `• ${action}`).join('\n')}
+${courtneyKarnesTranscripts.session2.actionItems.map(action => `• ${action}`).join('\n')}
+${courtneyKarnesTranscripts.session3.actionItems.map(action => `• ${action}`).join('\n')}
+${courtneyKarnesTranscripts.session4.actionItems.map(action => `• ${action}`).join('\n')}
+` : ''}
+
+${currentClient && currentClient.name === 'Rob Finlay' ? `
+**ROB FINLAY CONVERSATION HISTORY (January 2025 - Multiple Sessions):**
+
+**SESSION 1 - Coaching Session (January 15, 2025):**
+${robFinlayData.coachingSessions[0].keyInsights.map(insight => `• ${insight}`).join('\n')}
+
+**SESSION 2 - Coaching Session (January 22, 2025):**
+${robFinlayData.coachingSessions[1].keyInsights.map(insight => `• ${insight}`).join('\n')}
+
+**CURRENT FLOW STATE:**
+• Primary Activity: ${robFinlayData.coachingSessions[0].flowInsights.primaryFlowActivity}
+• Flow Style: ${robFinlayData.coachingSessions[0].flowInsights.flowStyle}
+• Energy Sources: ${robFinlayData.coachingSessions[0].flowInsights.energySources.join(', ')}
+• Current Challenges: ${robFinlayData.coachingSessions[0].flowInsights.challenges.join(', ')}
+
+**ACTIVE BUSINESS PROJECTS:**
+${robFinlayData.coachingSessions[0].businessFocus.currentProjects.map(project => `• ${project}`).join('\n')}
+
+**INNOVATION AREAS:**
+${robFinlayData.coachingSessions[0].businessFocus.innovationAreas.map(area => `• ${area}`).join('\n')}
+
+**RECOVERY PROTOCOLS:**
+Current: ${robFinlayData.coachingSessions[0].recoveryProtocols.current.join(', ')}
+Recommended: ${robFinlayData.coachingSessions[0].recoveryProtocols.recommended.join(', ')}
+
+**CURRENT STATUS:**
+• Flow Readiness: ${robFinlayData.coachingSessions[0].currentStatus.flowReadiness}
+• Leadership Leverage: ${robFinlayData.coachingSessions[0].currentStatus.leadershipLeverage}
+• Mission Alignment: ${robFinlayData.coachingSessions[0].currentStatus.missionAlignment}
+• Key Challenges: ${robFinlayData.coachingSessions[0].currentStatus.keyChallenges.join(', ')}
+
+**KEY QUOTES:**
+${robFinlayData.keyQuotes.map(quote => `• "${quote.quote}" - ${quote.speaker} (${quote.context})`).join('\n')}
+
+**NEXT STEPS:**
+${robFinlayData.nextSteps.map(step => `• ${step}`).join('\n')}
+
+**COACHING FOCUS:**
+${robFinlayData.coachingFocus.map(focus => `• ${focus}`).join('\n')}
 ` : ''}
 
 **AVAILABLE CLIENT DATA FOR ANALYSIS:**

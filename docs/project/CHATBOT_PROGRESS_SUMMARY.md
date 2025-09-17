@@ -43,7 +43,7 @@
 ### **Client Data**
 - ✅ **Context Available** - All 15 client profiles accessible
 - ✅ **Data Structure** - Proper IDs and relationships
-- ✅ **Performance Metrics** - Scores, strengths, risks, archetypes
+- ✅ **Performance Metrics** - Scores, strengths, risks, profiles
 
 ## 🎯 Next Steps
 
@@ -74,7 +74,7 @@
 
 2. **Verify All Dashboards**
    - Check that chatbot appears in all client dashboards
-   - Test with different clients and archetypes
+   - Test with different clients and profiles
    - Ensure proper client data context
 
 3. **Monitor API Usage**
@@ -108,7 +108,7 @@ We've created a `ChatbotTest` component that you can use to:
 Try these questions to verify the chatbot is working:
 - "How am I performing compared to other clients?"
 - "What are my key areas for growth?"
-- "How can I leverage my archetype strengths?"
+- "How can I leverage my profile strengths?"
 - "What specific actions should I take this week?"
 
 ### **Expected Responses**
@@ -158,8 +158,8 @@ npm start
 
 ### **What Your Clients Will Experience**
 - **Steven Kotler AI coaching** with provocative, challenging, and empowering guidance
-- **Personalized insights** based on their performance data and archetype
-- **Archetype-specific tools** tailored to their creative type and mission
+- **Personalized insights** based on their performance data and profile
+- **Profile-specific tools** tailored to their creative type and mission
 - **Actionable breakthroughs** for immediate implementation and execution
 - **Performance diagnostics** with neuroscience-backed flow science expertise
 - **10x leap coaching** focused on unlocking their next level of performance

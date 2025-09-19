@@ -11,12 +11,12 @@ const LoginPage = ({ onLoginSuccess }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     if (!hasAcceptedTerms) {
       setError('You must accept the Terms & Conditions to continue.');
       return;
     }
-    
+
     setIsLoading(true);
     setError('');
 
@@ -100,7 +100,7 @@ const LoginPage = ({ onLoginSuccess }) => {
                 </li>
               </ul>
             </div>
-            
+
             <div className="flex items-center space-x-2 pt-2">
               <input
                 type="checkbox"

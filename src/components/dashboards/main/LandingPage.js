@@ -38,7 +38,6 @@ export default function LandingPage({ onLoginSuccess }) {
           </p>
         </div>
       </footer>
-
     </div>
   );
 }

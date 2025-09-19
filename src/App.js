@@ -259,7 +259,6 @@ function AppContent() {
       <div className="pt-4 pb-12">
         {renderPage()}
       </div>
-      
     </div>
   );
 }

@@ -3,7 +3,7 @@
 
 const robFinlayData = {
   // Basic Profile Info
-  id: 'robfinlay',
+  id: 'rob',
   name: 'Rob Finlay',
   mission: 'Multiple Projects',
   archetype: 'The Community Builder',

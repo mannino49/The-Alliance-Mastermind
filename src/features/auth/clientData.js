@@ -16,8 +16,8 @@ export const clients = [
     lastName: 'Sessinghaus',
     email: 'rick@ricksessinghaus.com',
     password: 'rick_flow',
-    archetype: 'The Creator',
-    focus: 'AI Product/Book',
+    archetype: 'The Mastermind',
+    focus: 'Execution/Clarity',
     lastLogin: null
   },
   {
@@ -36,8 +36,8 @@ export const clients = [
     lastName: 'Cooper',
     email: 'amity.cooper@gmail.com',
     password: 'amity_flow',
-    archetype: 'The MTP Driver',
-    focus: 'MTP Focus',
+    archetype: 'The Mastermind',
+    focus: 'Intuition/Purpose',
     lastLogin: null
   },
   {
@@ -46,8 +46,8 @@ export const clients = [
     lastName: 'Van Deynze',
     email: 'dr.stephanievandeynzesnell@gmail.com',
     password: 'stephanie_flow',
-    archetype: 'The Leader',
-    focus: 'Veterinary/Leadership',
+    archetype: 'Flow Systems Architect',
+    focus: 'Clarity/Resonance',
     lastLogin: null
   },
   {
@@ -56,8 +56,8 @@ export const clients = [
     lastName: 'Lukan',
     email: 'lukanblair@gmail.com',
     password: 'blair_flow',
-    archetype: 'The System Builder',
-    focus: 'Exit Framework',
+    archetype: 'The Integrator',
+    focus: 'Systems/Influence',
     lastLogin: null
   },
   {
@@ -67,7 +67,7 @@ export const clients = [
     email: 'rjf@rjfinlay.com',
     password: 'rob_flow',
     archetype: 'The Community Builder',
-    focus: 'Multiple Projects',
+    focus: 'Execution/Clarity',
     lastLogin: null
   },
   {
@@ -77,7 +77,7 @@ export const clients = [
     email: 'mbwhit10@gmail.com',
     password: 'michael_flow',
     archetype: 'The Innovator',
-    focus: 'AI-Human Creativity',
+    focus: 'Execution/Clarity',
     lastLogin: null
   },
   {
@@ -87,7 +87,7 @@ export const clients = [
     email: 'jtadros@gmail.com',
     password: 'jason_flow',
     archetype: 'The Systems Thinker',
-    focus: 'AI/Math Innovation',
+    focus: 'Intuition/Execution',
     lastLogin: null
   },
   {
@@ -97,7 +97,7 @@ export const clients = [
     email: 'james.crowe@vumc.org',
     password: 'james_flow',
     archetype: 'The Scientist',
-    focus: 'Antibody Treatments',
+    focus: 'Novelty/Rigor',
     lastLogin: null
   },
   {
@@ -107,7 +107,7 @@ export const clients = [
     email: 'geofgarth@mac.com',
     password: 'geoffrey_flow',
     archetype: 'The Inventor',
-    focus: 'Hands-on Invention',
+    focus: 'Tinkering/Impact',
     lastLogin: null
   },
   {
@@ -117,7 +117,7 @@ export const clients = [
     email: 'otchkovskiy@gmail.com',
     password: 'anatoliy_flow',
     archetype: 'The Transformer',
-    focus: 'Company Transformation',
+    focus: 'Vision/Execution',
     lastLogin: null
   },
   {
@@ -126,8 +126,8 @@ export const clients = [
     lastName: 'Ozols',
     email: 'sandra.ozola@icloud.com',
     password: 'sandra_flow',
-    archetype: 'The Transitioner',
-    focus: 'Career Transition',
+    archetype: 'The Rebuilder',
+    focus: 'Curiosity/Wisdom',
     lastLogin: null
   },
   {
@@ -137,7 +137,7 @@ export const clients = [
     email: 'bbowser@amjcampbell.com',
     password: 'bruce_flow',
     archetype: 'The Disruptor',
-    focus: 'Veterinary Innovation',
+    focus: 'Purpose/Execution',
     lastLogin: null
   },
   {
@@ -146,8 +146,8 @@ export const clients = [
     lastName: 'Karnes',
     email: 'courtney.karnes@outlook.com',
     password: 'courtney_flow',
-    archetype: 'TBD',
-    focus: 'TBD',
+    archetype: 'The Strategic Visionary',
+    focus: 'Strategy/Intuition',
     lastLogin: null
   }
 ];

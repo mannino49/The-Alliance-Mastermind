@@ -32,8 +32,14 @@ export const ClientDataProvider = ({ children }) => {
     const transformedData = clientProfiles.map((profile, index) => {
       const clientInsights = insights[profile.name];
       
+      // Generate ID from name, with special handling for Rob Finlay
+      let clientId = profile.name.toLowerCase().replace(/\s+/g, '');
+      if (profile.name === 'Rob Finlay') {
+        clientId = 'rob';
+      }
+      
       return {
-        id: profile.name.toLowerCase().replace(/\s+/g, ''), // Generate ID from name
+        id: clientId,
         name: profile.name,
         mission: profile.mission,
         archetype: profile.archetype,

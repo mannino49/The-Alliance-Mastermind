@@ -42,6 +42,64 @@ const robFinlayData = {
         ],
         themes: ['focus_prioritization', 'travel_adaptation', 'leadership_leverage', 'program_development'],
         sentiment: 'motivated_but_scattered'
+      },
+      flowInsights: {
+        primaryFlowActivity: 'Creative writing and program development',
+        flowStyle: 'Multi-project creative explorer',
+        energySources: ['Creative expression', 'Community building', 'Program development'],
+        challenges: ['Focus diffusion', 'Travel disruptions', 'Decision fatigue']
+      },
+      businessFocus: {
+        currentProjects: ['Two books (fiction + self-help)', 'Podcast development', 'Soil regeneration tech', 'Flow Alliance program'],
+        innovationAreas: ['Creative writing', 'Community programs', 'Environmental technology', 'Flow leadership']
+      },
+      recoveryProtocols: {
+        current: ['Drawing microdosing', 'Gratitude practice', 'Goal-setting rituals'],
+        recommended: ['Travel-proof routines', 'Post-travel reset rituals', 'Sauna + meditation']
+      },
+      currentStatus: {
+        flowReadiness: 55,
+        leadershipLeverage: 65,
+        missionAlignment: 50,
+        keyChallenges: ['Focus diffusion across multiple projects', 'Travel disrupting established routines', 'Decision fatigue from too many options']
+      }
+    },
+    {
+      sessionId: 'rob_2025_01_22',
+      date: '2025-01-22',
+      duration: 60,
+      type: 'follow_up_session',
+      coachNotes: 'Follow-up on prioritization work and travel routine development. Progress on Flow Alliance contributions.',
+      keyInsights: [
+        'Growing clarity on Flow Alliance leadership role',
+        'Improved execution rhythm through pre-planning',
+        'Travel disruptions remain primary challenge',
+        'Community building emerging as core strength'
+      ],
+      actionItems: [
+        'Develop structured post-travel reset ritual',
+        'Continue Alliance monthly accountability calls',
+        'Maintain daily drawing microdosing practice'
+      ],
+      flowInsights: {
+        primaryFlowActivity: 'Creative writing and program development',
+        flowStyle: 'Multi-project creative explorer',
+        energySources: ['Creative expression', 'Community building', 'Program development'],
+        challenges: ['Focus diffusion', 'Travel disruptions', 'Decision fatigue']
+      },
+      businessFocus: {
+        currentProjects: ['Two books (fiction + self-help)', 'Podcast development', 'Soil regeneration tech', 'Flow Alliance program'],
+        innovationAreas: ['Creative writing', 'Community programs', 'Environmental technology', 'Flow leadership']
+      },
+      recoveryProtocols: {
+        current: ['Drawing microdosing', 'Gratitude practice', 'Goal-setting rituals'],
+        recommended: ['Travel-proof routines', 'Post-travel reset rituals', 'Sauna + meditation']
+      },
+      currentStatus: {
+        flowReadiness: 65,
+        leadershipLeverage: 70,
+        missionAlignment: 60,
+        keyChallenges: ['Travel disrupting established routines', 'Bandwidth overload from Alliance enthusiasm', 'Need for recovery playbook']
       }
     }
   ],
@@ -160,7 +218,61 @@ const robFinlayData = {
         socialConnection: 85 // Strong community building
       }
     }
-  ]
+  ],
+
+  // Top-level properties required by chatbot
+  keyQuotes: [
+    {
+      quote: "I have so many active interests - two books, podcast, soil tech - but I'm struggling to prioritize",
+      speaker: "Rob Finlay",
+      context: "Strategy session discussing multiple projects"
+    },
+    {
+      quote: "Travel keeps disrupting my flow practices, I need routines that work anywhere",
+      speaker: "Rob Finlay",
+      context: "Discussing travel challenges"
+    },
+    {
+      quote: "The Flow Alliance program has huge potential, but I need to avoid planning fatigue",
+      speaker: "Rob Finlay",
+      context: "Program development discussion"
+    },
+    {
+      quote: "Night-before planning and goal-directed scheduling are the keys to entering flow",
+      speaker: "Rob Finlay",
+      context: "Execution rhythm breakthrough"
+    }
+  ],
+
+  nextSteps: [
+    'Develop structured post-travel reset ritual (gratitude + scaled goals + light creative release)',
+    'Continue Alliance contributions while keeping bandwidth guardrails',
+    'Systematize sauna + meditation practices as recovery anchors',
+    'Balance enthusiasm for program-building with personal priorities',
+    'Test post-travel reset ritual during next trip',
+    'Maintain daily drawing microdosing while exploring lighter creative release'
+  ],
+
+  coachingFocus: [
+    'Mission alignment and project prioritization',
+    'Travel-resilient flow practices and recovery protocols',
+    'Flow Alliance leadership development and community building',
+    'Execution rhythm optimization through pre-planning',
+    'Creative microdosing integration and sustainability',
+    'Post-travel reset ritual development and implementation'
+  ],
+
+  currentStatus: {
+    flowReadiness: 65,
+    leadershipLeverage: 70,
+    missionAlignment: 60,
+    keyChallenges: [
+      'Travel disrupting established routines',
+      'Bandwidth overload from Alliance enthusiasm',
+      'Need for recovery playbook',
+      'Focus diffusion across multiple projects'
+    ]
+  }
 };
 
 // Instructions for integration:
